@@ -1,223 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minh Tien</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      background-color: #F1F1F1;
-      color: #333;
-    }
-    
-    header {
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-    }
-    
-    nav ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 10px;
-    }
-    
-    nav ul li {
-      margin-right: 10px;
-    }
-    
-    nav ul li a {
-      color: #333;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    
-    nav ul li a:hover {
-      color: #000;
-    }
-    
-    main {
-      margin-top: 70px;
-      padding: 20px;
-    }
-    
-    .intro {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 80vh;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    
-    .intro h1 {
-      font-size: 4rem;
-      margin-bottom: 20px;
-    }
-    
-    .intro p {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
-    
-    .intro button {
-      background-color: #06c;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      cursor: pointer;
-      font-size: 1.2rem;
-      padding: 10px 20px;
-      transition: all 0.2s ease;
-    }
-    
-    .intro button:hover {
-      background-color: #004d99;
-    }
-    
-    .section-title {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-    
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
-    }
-    
-    .grid-item {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .grid-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 0.2s ease;
-    }
-    
-    .grid-item:hover img
-{
-      transform: scale(1.1);
-    }
-    
-    .grid-item:hover .overlay {
-      opacity: 1;
-    }
-    
-    .grid-item .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      bottom: 0;
-      color: #fff;
-      left: 0;
-      opacity: 0;
-      padding: 10px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: all 0.2s ease;
-    }
-    
-    .grid-item .overlay h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-    
-    .grid-item .overlay p {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-    
-    .grid-item .overlay a {
-      background-color: #06c;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      display: block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    
-    .grid-item .overlay a:hover {
-      background-color: #004d99;
-    }
-    
-    footer {
-      background-color: #fff;
-      border-top: 1px solid #ddd;
-      bottom: 0;
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      text-align: center;
-      width: 100%;
-    }
-    
-    footer p {
-      padding: 10px;
-    }
-    
-    audio {
-      display: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="intro">
-      <h1>Minh Tien</h1>
-      <p>Web Developer</p>
-      <button>Download Resume</button>
-    </section>
-    <section id="about">
-      <h2 class="section-title">About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus nunc auctor blandit consectetur. Nullam pellentesque eros euismod, venenatis erat eu, pharetra felis. Praesent rhoncus diam purus, et euismod magna ultricies id.</p>
-    </section>
-    <section id="skills">
-      <h2 class="section-title">Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-      </ul>
-    </section>
-    <section id="portfolio">
-      <h2
-
+    
+    <div id="drag-container">
+        <div id="spin-container">
+          <img src="./img/img1.jpg" alt="">
+          <img src="./img/img2.jpg" alt="">
+          <img src="./img/img3.jpg" alt="">
+          <img src="./img/img4.jpg" alt="">
+          <img src="./img/img5.jpg" alt="">
+          <img src="./img/img6.jpg" alt="">
+          <img src="./img/img7.jpg" alt="">
+          <img src="./img/TNT.png" alt="">
+          
+            <p>My Love</p>
+          
+        
+        </div>
+        <div id="ground"></div>
+      </div>
+      
+<div id="music-container"></div>
+      <div id="canva">
+      <canvas id="canvas"></canvas>
+    </div>
+    <audio src="nhac.mp3" autoplay></audio>
+    <script src="main.js"></script>
+</body>
+</html>
