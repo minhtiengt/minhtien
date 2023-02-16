@@ -1,113 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Minh Tien</title>
+<html lang="vi">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-  <body>
-    <audio autoplay loop>
-      <source src="nhac.mp3" type="audio/mp3">
-    </audio>
-    <header>
-      <div class="container">
-        <div class="header-top">
-          <div class="logo">
-            <a href="#"><img src="img/logo.png" alt="Logo"></a>
-          </div>
-          <div class="header-text">
-            <h1>Minh Tien</h1>
-            <p>Web Developer</p>
-          </div>
+    <title>I Love You</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="drag-container">
+        <div id="spin-container">
+          <img src="./img/img1.jpg" alt="">
+          <img src="./img/img2.jpg" alt="">
+          <img src="./img/img3.jpg" alt="">
+          <img src="./img/img4.jpg" alt="">
+          <img src="./img/img5.jpg" alt="">
+          <img src="./img/img6.jpg" alt="">
+          <img src="./img/img7.jpg" alt="">
+          <img src="./img/TNT.png" alt="">
+          
+            <p>My Love</p>
+          
+        
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div id="ground"></div>
       </div>
-    </header>
-    
-    <main>
-      <div class="container">
-        <section id="about">
-          <h2>About Me</h2>
-          <img src="img/about.png" alt="About Me">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue id nibh congue vestibulum eu vel orci. Integer pharetra eros purus, ac euismod eros varius eget. Nam non ex eget arcu rhoncus facilisis. Duis tincidunt posuere metus in congue. Proin tristique elit id tellus vestibulum, sed pharetra libero sollicitudin. Suspendisse potenti. Praesent porta tortor vitae justo sollicitudin, vel aliquam dolor malesuada.</p>
-        </section>
-        
-        <section id="portfolio">
-          <h2>Portfolio</h2>
-          <div class="portfolio-container">
-            <div class="portfolio-item">
-              <img src="img/portfolio-1.png" alt="Portfolio 1">
-              <h3>Project 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="portfolio-item">
-              <img src="img/portfolio-2.png" alt="Portfolio 2">
-              <h3>Project 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="portfolio-item">
-              <img src="img/portfolio-3.png" alt="Portfolio 3">
-              <h3>Project 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </section>
-        
-        <section id="blog">
-          <h2>Blog</
-          <div class="blog-container">
-            <div class="blog-post">
-              <h3>Blog Post 1</h3>
-              <img src="img/blog-1.png" alt="Blog Post 1">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue id nibh congue vestibulum eu vel orci.</p>
-            </div>
-            <div class="blog-post">
-              <h3>Blog Post 2</h3>
-              <img src="img/blog-2.png" alt="Blog Post 2">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue id nibh congue vestibulum eu vel orci.</p>
-            </div>
-            <div class="blog-post">
-              <h3>Blog Post 3</h3>
-              <img src="img/blog-3.png" alt="Blog Post 3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue id nibh congue vestibulum eu vel orci.</p>
-            </div>
-          </div>
-        </section>
-        
-        <section id="contact">
-          <h2>Contact Me</h2>
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <input type="submit" value="Send Message">
-          </form>
-        </section>
-      </div>
-    </main>
-    
-    <footer>
-      <div class="container">
-        <p>Copyright &copy; 2023 Minh Tien</p>
-      </div>
-    </footer>
-    
+      
+<div id="music-container"></div>
+      <div id="canva">
+      <canvas id="canvas"></canvas>
+    </div>
+    <audio src="nhac.mp3" autoplay></audio>
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
-
